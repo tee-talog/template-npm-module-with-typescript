@@ -1,0 +1,34 @@
+{
+  "name": "template-npm-module-with-typescript",
+  "version": "0.0.1",
+  "description": "Template for npm module with TypeScript",
+  "main": "lib/index.js",
+  "scripts": {
+    "lib": "tsc -p src/ts/tsconfig.json --outDir ./lib",
+    "example": "browserify example/example.ts --debug -p [ tsify --inlineSourceMap -p example/tsconfig.json ] > example/example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tee-talog/template-npm-module-with-typescript.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "TypeScript",
+    "npm module",
+    "template"
+  ],
+  "author": "tee-talog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tee-talog/template-npm-module-with-typescript/issues"
+  },
+  "homepage": "https://github.com/tee-talog/template-npm-module-with-typescript#readme",
+  "private": false,
+  "devDependencies": {
+    "@types/node": "^8.0.28",
+    "browserify": "^14.4.0",
+    "tsify": "^3.0.3",
+    "tslib": "^1.7.1",
+    "typescript": "^2.5.2"
+  }
+}
